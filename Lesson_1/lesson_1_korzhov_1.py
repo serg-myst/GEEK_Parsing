@@ -15,5 +15,5 @@ else:
     user_repos = []
     for repo_dict in repo_list:
         user_repos.append({'name': repo_dict['name']})
-    with open('user_repos.txt', 'w', encoding='utf-8') as outfile:
+    with open('../user_repos.txt', 'w', encoding='utf-8') as outfile:
         json.dump(user_repos, outfile)
